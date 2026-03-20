@@ -1,0 +1,66 @@
+{
+    "generado": "2026-03-20 17:31:11",
+    "total": 6,
+    "usuarios": [
+        {
+            "nombre": "Brenda",
+            "apellido": "Judith MoralesCabrera",
+            "email": "brendayudithmoralescabrera@gmail.com",
+            "estado": "Baja California Sur",
+            "municipio": "La Paz",
+            "localidad": "La paz",
+            "nacimiento": "4 de junio de 1992",
+            "curp": "MOCB920604MBSRBR03"
+        },
+        {
+            "nombre": "Jessica",
+            "apellido": "reyes",
+            "email": "gabrielreyesjessica@gmail.com",
+            "estado": "Baja California Sur",
+            "municipio": "LOS CABOS",
+            "localidad": "35c506c2-733b-4970-822c-eb535da1da9e",
+            "nacimiento": "3 de marzo de 1994",
+            "curp": "REGJ940303MVZYBS07"
+        },
+        {
+            "nombre": "Johan",
+            "apellido": "Higuera",
+            "email": "chuma04higuera@gmail.com",
+            "estado": "Baja California Sur",
+            "municipio": "guerrero negro baja california sur",
+            "localidad": "solidaridad",
+            "nacimiento": "11 de noviembre de 2006",
+            "curp": "HGMDJH06111103H100"
+        },
+        {
+            "nombre": "Ninisvia",
+            "apellido": "Fleitas",
+            "email": "Ninisviafleitas@hotmail.com",
+            "estado": "Baja California Sur",
+            "municipio": "La Paz",
+            "localidad": "",
+            "nacimiento": "26 de enero de 1974",
+            "curp": "FELN740126MNELLN07"
+        },
+        {
+            "nombre": "Ricardo",
+            "apellido": "Gonzalez Palma",
+            "email": "ricardogonzalez11062003@gmail.com",
+            "estado": "Baja California Sur",
+            "municipio": "Cabos San Lucas",
+            "localidad": "LAS PALMAS CSL. C.P. 23477",
+            "nacimiento": "11 de junio de 2003",
+            "curp": "gopr030611hgrnlca6"
+        },
+        {
+            "nombre": "Soporte",
+            "apellido": "AprendeINEA Baja California Sur",
+            "email": "bcs_aprendeinea@inea.gob.mx",
+            "estado": "Baja California Sur",
+            "municipio": "La Paz",
+            "localidad": "Centro",
+            "nacimiento": "19 de marzo de 2000",
+            "curp": "XXXX000319XXXXX000"
+        }
+    ]
+}

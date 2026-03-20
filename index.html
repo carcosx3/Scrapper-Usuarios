@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-linear-to-bl from-gray-900 to-indigo-950 text-white">
+    <div class="flex justify-center titleContainer">
+        <div class="container w-10/12">
+            <h1 class="flex justify-between items-center text-xl">
+                <span>Usuarios Encontrados: 
+                    <span class="usersQuant text-bold"></span>
+                </span>
+                <span class="titleDate"></span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="flex justify-center formContainer">
+        <div class="container w-10/12 mY-2">
+            <label for="date" class="block text-lg font-bold" >Seleccione una fecha para filtrar</label>
+            <input type="date" name="date" id="id_date" class="block bg-white text-black p-2 my-1 rounded">
+            <button type="submit" onclick="loadUsers()" class="transition inline-block bg-indigo-500 capitalize font-bold py-2 px-3 rounded hover:bg-indigo-600">Buscar</button>
+        </div>
+    </div>
+
+    <div class="flex justify-center usersContainer">
+        <div class="container w-10/12">
+            <h2 class="text-lg my-2">Lista de Usuarios con menos de 5 dias de inscripcion</h2>
+
+            <div class="container flex flex-wrap gapY-2 usuariosLista">
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
