@@ -4,35 +4,40 @@ let userQuant = document.querySelector('.usersQuant');
 let usersList = document.querySelector('.usuariosLista');
 let titleDate = document.querySelector('.titleDate');
 
-function usuarios( usersArray ){
-    userQuant.innerText = usersArray.total;
-    titleDate.innerText = `${new Date().getDate()}/${new Date().getMonth() + 1}/${new Date().getFullYear()}`
+function obtenerEdad( date ){
     let meses = {
         "enero": 0, "febrero": 1, "marzo": 2, "abril": 3, "mayo": 4, "junio": 5,
         "julio": 6, "agosto": 7, "septiembre": 8, "octubre": 9, "noviembre": 10, "diciembre": 11
     }
+    var day, month, year;
+    var fechaNac = date.split(' ');
+    var edad;
 
+    day = fechaNac[0];
+    month = meses[fechaNac[2].toLowerCase()];
+    year = fechaNac[4];
+
+    var fechaObj = new Date(year, month, day);
+
+    edad = new Date().getFullYear() - fechaObj.getFullYear();
+
+    if( new Date().getMonth() < fechaObj.getMonth() ){
+        edad--;
+    } else if( new Date().getMonth() == fechaObj.getMonth() ){
+        if( new Date().getDate() < fechaObj.getDate() ){
+            edad--;
+        }
+    }
+
+    return edad;
+}
+
+function usuarios( usersArray ){
+    userQuant.innerText = usersArray.total;
+    titleDate.innerText = `${new Date().getDate()}/${new Date().getMonth() + 1}/${new Date().getFullYear()}`
 
     usersArray.usuarios.forEach( user => {
-        var day, month, year;
-        var fechaNac = user.nacimiento.split(' ');
-        var edad;
-
-        day = fechaNac[0];
-        month = meses[fechaNac[2].toLowerCase()];
-        year = fechaNac[4];
-
-        var fechaObj = new Date(year, month, day);
-
-        edad = new Date().getFullYear() - fechaObj.getFullYear();
-
-        if( new Date().getMonth() < fechaObj.getMonth() ){
-            edad--;
-        } else if( new Date().getMonth() == fechaObj.getMonth() ){
-            if( new Date().getDate() < fechaObj.getDate() ){
-                edad--;
-            }
-        }
+        var edad = obtenerEdad( user.nacimiento );
 
         usersList.insertAdjacentHTML('beforeend', `
             <div class="w-full md:w-6/12 lg:w-4/12 p-1">
