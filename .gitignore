@@ -2,3 +2,4 @@ cookies.txt
 *.csv
 *.env
 usersScrapper.php
+usuarios.json
