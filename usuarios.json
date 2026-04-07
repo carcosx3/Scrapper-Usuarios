@@ -1,66 +1,56 @@
 {
-    "generado": "2026-03-20 18:01:38",
-    "total": 6,
+    "generado": "2026-04-07 16:43:32",
+    "total": 5,
     "usuarios": [
         {
-            "nombre": "Brenda",
-            "apellido": "Judith MoralesCabrera",
-            "email": "brendayudithmoralescabrera@gmail.com",
-            "estado": "Baja California Sur",
-            "municipio": "La Paz",
-            "localidad": "La paz",
-            "nacimiento": "4 de junio de 1992",
-            "curp": "MOCB920604MBSRBR03"
-        },
-        {
-            "nombre": "Jessica",
-            "apellido": "reyes",
-            "email": "gabrielreyesjessica@gmail.com",
+            "nombre": "Jade",
+            "apellido": "esmeralda Martinez",
+            "email": "Jadeesmeraldagraciasmartinez@gmail.com",
             "estado": "Baja California Sur",
             "municipio": "LOS CABOS",
-            "localidad": "35c506c2-733b-4970-822c-eb535da1da9e",
-            "nacimiento": "3 de marzo de 1994",
-            "curp": "REGJ940303MVZYBS07"
+            "localidad": "CABO SAN LUCAS",
+            "nacimiento": "25 de junio de 2010",
+            "curp": "MAXJ100625MZSRXDA3"
         },
         {
-            "nombre": "Johan",
-            "apellido": "Higuera",
-            "email": "chuma04higuera@gmail.com",
+            "nombre": "natalia",
+            "apellido": "sarahi rosales mejia",
+            "email": "nataliarosalesm2013@gmail.com",
             "estado": "Baja California Sur",
-            "municipio": "guerrero negro baja california sur",
-            "localidad": "solidaridad",
-            "nacimiento": "11 de noviembre de 2006",
-            "curp": "HGMDJH06111103H100"
+            "municipio": "los cabos",
+            "localidad": "cabo san lucas",
+            "nacimiento": "11 de enero de 1991",
+            "curp": "nataliarosalesm201"
         },
         {
-            "nombre": "Ninisvia",
-            "apellido": "Fleitas",
-            "email": "Ninisviafleitas@hotmail.com",
+            "nombre": "OSCAR",
+            "apellido": "RAFAEL PERPULY FIERRO",
+            "email": "perpulyoscar152@gmail.com",
             "estado": "Baja California Sur",
-            "municipio": "La Paz",
-            "localidad": "",
-            "nacimiento": "26 de enero de 1974",
-            "curp": "FELN740126MNELLN07"
+            "municipio": "LOS CABOS",
+            "localidad": "TIERRA Y LIBERTAD",
+            "nacimiento": "9 de noviembre de 2007",
+            "curp": "PEFO071109HBSRRSA8"
         },
         {
-            "nombre": "Ricardo",
-            "apellido": "Gonzalez Palma",
-            "email": "ricardogonzalez11062003@gmail.com",
+            "nombre": "Perla",
+            "apellido": "Yareli Cienfuegos Flores",
+            "email": "fyareli646@gmail.com",
             "estado": "Baja California Sur",
-            "municipio": "Cabos San Lucas",
-            "localidad": "LAS PALMAS CSL. C.P. 23477",
-            "nacimiento": "11 de junio de 2003",
-            "curp": "gopr030611hgrnlca6"
+            "municipio": "La paz",
+            "localidad": "Pedregal de Cortez",
+            "nacimiento": "8 de mayo de 2007",
+            "curp": "CIFP070508MBSNLRA0"
         },
         {
-            "nombre": "Soporte",
-            "apellido": "AprendeINEA Baja California Sur",
-            "email": "bcs_aprendeinea@inea.gob.mx",
+            "nombre": "Yessenia",
+            "apellido": "Solis",
+            "email": "yesale.1997g@gmail.com",
             "estado": "Baja California Sur",
-            "municipio": "La Paz",
-            "localidad": "Centro",
-            "nacimiento": "19 de marzo de 2000",
-            "curp": "XXXX000319XXXXX000"
+            "municipio": "Cabo san lucas",
+            "localidad": "Lomas del sol",
+            "nacimiento": "25 de marzo de 1997",
+            "curp": "GASY970325MJCRLS06"
         }
     ]
 }

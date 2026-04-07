@@ -32,6 +32,12 @@ function obtenerEdad( date ){
     return edad;
 }
 
+function hideCard(e){
+    var elem = e.target;
+
+    elem.parentElement.parentElement.parentElement.classList.add('hidden')
+}
+
 function usuarios( usersArray ){
     userQuant.innerText = usersArray.total;
     titleDate.innerText = `${new Date().getDate()}/${new Date().getMonth() + 1}/${new Date().getFullYear()}`
@@ -42,7 +48,11 @@ function usuarios( usersArray ){
         usersList.insertAdjacentHTML('beforeend', `
             <div class="w-full md:w-6/12 lg:w-4/12 p-1">
                 <div class="h-full border rounded-sm p-2 text-xs sm:text-sm ${edad < 15 ? 'border-red-700' : 'border-white' }">
-                    <h3 class="capitalize font-bold">${user.nombre} ${user.apellido}</h3>
+                    <div class="flex align-center justify-between">
+                        <h3 class="capitalize font-bold">${user.nombre} ${user.apellido}</h3>
+
+                        <button class="inline-block transition-all px-2 border border-red-700 hover:border-black" onclick="hideCard(event)">&times</button>
+                    </div>
                     <ul class="mb-2">
                         <li>${user.nacimiento}</li>
                         <li><span class="font-bold">Edad: </span>${edad}</li>
