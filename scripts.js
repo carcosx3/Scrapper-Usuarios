@@ -35,7 +35,7 @@ function obtenerEdad( date ){
 function hideCard(e){
     var elem = e.target;
 
-    elem.parentElement.parentElement.parentElement.classList.add('hidden')
+    elem.parentElement.parentElement.parentElement.classList.add('hidden');
 }
 
 function usuarios( usersArray ){
@@ -51,7 +51,7 @@ function usuarios( usersArray ){
                     <div class="flex align-center justify-between">
                         <h3 class="capitalize font-bold">${user.nombre} ${user.apellido}</h3>
 
-                        <button class="inline-block transition-all px-2 border border-red-700 hover:border-black" onclick="hideCard(event)">&times</button>
+                        <button class="inline-block transition-all px-2 border border-red-700 rounded-sm hover:border-black" onclick="hideCard(event)">&times</button>
                     </div>
                     <ul class="mb-2">
                         <li>${user.nacimiento}</li>
