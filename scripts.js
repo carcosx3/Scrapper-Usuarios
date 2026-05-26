@@ -61,6 +61,10 @@ function usuarios( usersArray ){
                         <li class="capitalize">${user.estado}</li>
                         <li class="capitalize">${user.municipio}</li>
                         <li class="capitalize">${user.localidad}</li>
+                        <li class="capitalize">${user.razon}</li>
+                        <li class="capitalize">primaria: ${user.primaria ? user.primaria : 'no puso'}</li>
+                        <li class="capitalize">secundaria: ${user.secundaria ? user.secundaria : 'no puso'}</li>
+                        <li class="capitalize"><b>Matrias: </b><br>${user.materias}</li>
                     </ul>
                 </div>
             </div>
@@ -105,6 +109,7 @@ async function loadUsers(){
     await fetch(path)
         .then( res => res.json() )
         .then( users => {
+            console.log(users);
             console.log(users.total);
             usuarios(users)
         } )

@@ -1,46 +1,96 @@
 {
-    "generado": "2026-04-10 16:57:23",
-    "total": 4,
+    "generado": "2026-05-26 18:26:30",
+    "total": 5,
     "usuarios": [
         {
-            "nombre": "Jade",
-            "apellido": "esmeralda Martinez",
-            "email": "Jadeesmeraldagraciasmartinez@gmail.com",
+            "nombre": "Ana",
+            "apellido": "karen García paez",
+            "email": "sandoval29121996@gmail.com",
+            "nacimiento": "29 de diciembre de 1996",
+            "curp": "GAPA961229MSLRZN09",
             "estado": "Baja California Sur",
-            "municipio": "LOS CABOS",
-            "localidad": "CABO SAN LUCAS",
-            "nacimiento": "25 de junio de 2010",
-            "curp": "MAXJ100625MZSRXDA3"
+            "municipio": "Baja California Sur",
+            "localidad": "La Paz Bcs",
+            "razon": "",
+            "primaria": "",
+            "secundaria": "",
+            "materias": [
+                "Primaria - Lengua y comunicación 1",
+                "Primaria - Pensamiento matemático 1",
+                "Primaria - Vida y comunidad 1"
+            ]
         },
         {
-            "nombre": "Margarita",
-            "apellido": "Juarez Torres",
-            "email": "maggyjuarez09@gmail.com",
+            "nombre": "Jaime",
+            "apellido": "Adalberto Lopez \tde la Peña",
+            "email": "camilazusenalopez0@gmail.com",
+            "nacimiento": "23 de agosto de 1991",
+            "curp": "LOPJ910823HBSPXM03",
             "estado": "Baja California Sur",
             "municipio": "Los cabos",
-            "localidad": "Villas de cortes",
-            "nacimiento": "26 de enero de 1989",
-            "curp": "jutm890126mdfrrr04"
+            "localidad": "Luis Donald colosio",
+            "razon": "",
+            "primaria": "No",
+            "secundaria": "Sí",
+            "materias": [
+                "Secundaria - Lengua y comunicación 3",
+                "Secundaria - Pensamiento matemático 3",
+                "Secundaria - Vida y comunidad 2"
+            ]
         },
         {
-            "nombre": "OSCAR",
-            "apellido": "RAFAEL PERPULY FIERRO",
-            "email": "perpulyoscar152@gmail.com",
+            "nombre": "Jesus",
+            "apellido": "Manuel Sanchez Jimenez",
+            "email": "princesscindy1389@gmail.com",
+            "nacimiento": "20 de marzo de 1997",
+            "curp": "SAJJ970320HHGNMS08",
+            "estado": "Baja California Sur",
+            "municipio": "Los Cabos",
+            "localidad": "cabo san lucas",
+            "razon": "",
+            "primaria": "",
+            "secundaria": "",
+            "materias": [
+                "Secundaria - Lengua y comunicación 3",
+                "Secundaria - Pensamiento matemático 3",
+                "Secundaria - Vida y comunidad 2"
+            ]
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Cristobal Castillo",
+            "email": "juancris2804@gmail.com",
+            "nacimiento": "28 de abril de 1972",
+            "curp": "Cagj720428hdfsnn00",
+            "estado": "Baja California Sur",
+            "municipio": "Los Cabos",
+            "localidad": "San Jose del Cabo",
+            "razon": "",
+            "primaria": "",
+            "secundaria": "",
+            "materias": [
+                "Secundaria - Lengua y comunicación 3",
+                "Secundaria - Pensamiento matemático 3",
+                "Secundaria - Vida y comunidad 2"
+            ]
+        },
+        {
+            "nombre": "Miriam",
+            "apellido": "Castañeda",
+            "email": "castanedamiriam726@gmail.com",
+            "nacimiento": "9 de abril de 1998",
+            "curp": "vacm980409mgrlsr06",
             "estado": "Baja California Sur",
             "municipio": "LOS CABOS",
-            "localidad": "TIERRA Y LIBERTAD",
-            "nacimiento": "9 de noviembre de 2007",
-            "curp": "PEFO071109HBSRRSA8"
-        },
-        {
-            "nombre": "Perla",
-            "apellido": "Yareli Cienfuegos Flores",
-            "email": "fyareli646@gmail.com",
-            "estado": "Baja California Sur",
-            "municipio": "La paz",
-            "localidad": "Pedregal de Cortez",
-            "nacimiento": "8 de mayo de 2007",
-            "curp": "CIFP070508MBSNLRA0"
+            "localidad": "Cabo San Lucas",
+            "razon": "",
+            "primaria": "",
+            "secundaria": "",
+            "materias": [
+                "Secundaria - Lengua y comunicación 3",
+                "Secundaria - Pensamiento matemático 3",
+                "Secundaria - Vida y comunidad 2"
+            ]
         }
     ]
 }

@@ -234,15 +234,50 @@ foreach($profiles as $id=>$html){
 
     foreach($lis as $dl){
 
-        $dt=$dl->getElementsByTagName("dt")->item(0);
-        $dd=$dl->getElementsByTagName("dd")->item(0);
+        $dts = $dl->getElementsByTagName("dt");
+        $dds = $dl->getElementsByTagName("dd");
 
-        if($dt && $dd){
+        for($i = 0; $i < $dts->length; $i++){
 
-            $datosPerfil[trim($dt->textContent)] = trim($dd->textContent);
+            $dt = $dts->item($i);
+            $dd = $dds->item($i);
 
+            if($dt && $dd){
+
+                $titulo = trim($dt->textContent);
+
+                // excepción de la pregunta larga
+                if(str_contains($titulo, '¿Por qué te interesa registrarte en esta plataforma?')){
+
+                    $dt = $dts->item($i + 1);
+
+                    if(!$dt){
+                        continue;
+                    }
+
+                    $titulo = trim($dt->textContent);
+                }
+
+                // si el dd tiene una ul interna -> materias
+                if($dd->getElementsByTagName('ul')->length > 0){
+
+                    $materias = [];
+
+                    $items = $dd->getElementsByTagName('li');
+
+                    foreach($items as $item){
+                        $materias[] = trim($item->textContent);
+                    }
+
+                    $datosPerfil[$titulo] = $materias;
+
+                }else{
+
+                    // datos normales
+                    $datosPerfil[$titulo] = trim($dd->textContent);
+                }
+            }
         }
-
     }
 
     $usuarios[]=[
@@ -250,11 +285,15 @@ foreach($profiles as $id=>$html){
         "nombre"=>$nombre,
         "apellido"=>$apellido,
         "email"=>$datosPerfil['Dirección Email'] ?? "",
+        "nacimiento"=>$datosPerfil['Fecha de  nacimiento'] ?? "",
+        "curp"=>$datosPerfil['CURP (18 caracteres)'] ?? "",
         "estado"=>$datosPerfil['Entidad federativa donde radicas actualmente'] ?? "",
         "municipio"=>$datosPerfil['Municipio donde radicas actualmente'] ?? "",
         "localidad"=>$datosPerfil['Localidad o Colonia donde radicas actualmente'] ?? "",
-        "nacimiento"=>$datosPerfil['Fecha de  nacimiento'] ?? "",
-        "curp"=>$datosPerfil['CURP (18 caracteres)'] ?? ""
+        "razon"=>$datosPerfil['¿Por qué te interesa registrarte en esta plataforma? Si deseas certificar Primaria y Secundaria, debes seleccionar  "Para obtener mi certificado de Primaria"'] ?? "",
+        "primaria"=>$datosPerfil['Inscribirme a materias de primaria'] ?? "",
+        "secundaria"=>$datosPerfil['Inscribirme a materias de secundaria'] ?? "",
+        "materias"=>$datosPerfil['Perfiles de curso'] ?? ""
 
     ];
 
