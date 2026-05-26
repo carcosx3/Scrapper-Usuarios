@@ -237,46 +237,34 @@ foreach($profiles as $id=>$html){
         $dts = $dl->getElementsByTagName("dt");
         $dds = $dl->getElementsByTagName("dd");
 
-        for($i = 0; $i < $dts->length; $i++){
+        $dt = $dts->item(0);
+        $dd = $dds->item(0);
 
-            $dt = $dts->item($i);
-            $dd = $dds->item($i);
+        if($dt && $dd){
 
-            if($dt && $dd){
+            $titulo = trim($dt->textContent);
 
-                $titulo = trim($dt->textContent);
-
-                // excepción de la pregunta larga
-                if(str_contains($titulo, '¿Por qué te interesa registrarte en esta plataforma?')){
-
-                    $dt = $dts->item($i + 1);
-
-                    if(!$dt){
-                        continue;
-                    }
-
-                    $titulo = trim($dt->textContent);
-                }
-
-                // si el dd tiene una ul interna -> materias
-                if($dd->getElementsByTagName('ul')->length > 0){
-
-                    $materias = [];
-
-                    $items = $dd->getElementsByTagName('li');
-
-                    foreach($items as $item){
-                        $materias[] = trim($item->textContent);
-                    }
-
-                    $datosPerfil[$titulo] = $materias;
-
-                }else{
-
-                    // datos normales
-                    $datosPerfil[$titulo] = trim($dd->textContent);
-                }
+            // excepción de la pregunta larga
+            if(str_contains($titulo, '¿Por qué te interesa registrarte en esta plataforma?')){
+                $dt = $dts->item(1);
             }
+
+            // si el dd tiene una ul interna -> materias
+            if($dd->getElementsByTagName('ul')->length > 0){
+
+                $materias = [];
+
+                $items = $dd->getElementsByTagName('li');
+
+                foreach($items as $item){
+                    $materias[] = trim($item->textContent);
+                }
+
+                $datosPerfil[$titulo] = $materias;
+
+            }
+            // datos normales
+            $datosPerfil[$titulo] = trim($dd->textContent);
         }
     }
 
@@ -290,7 +278,7 @@ foreach($profiles as $id=>$html){
         "estado"=>$datosPerfil['Entidad federativa donde radicas actualmente'] ?? "",
         "municipio"=>$datosPerfil['Municipio donde radicas actualmente'] ?? "",
         "localidad"=>$datosPerfil['Localidad o Colonia donde radicas actualmente'] ?? "",
-        "razon"=>$datosPerfil['¿Por qué te interesa registrarte en esta plataforma? Si deseas certificar Primaria y Secundaria, debes seleccionar "Para obtener mi certificado de Primaria"'] ?? "",
+        "razon"=>$datosPerfil['¿Por qué te interesa registrarte en esta plataforma? Si deseas certificar Primaria y Secundaria, debes seleccionar  "Para obtener mi certificado de Primaria"'] ?? "",
         "primaria"=>$datosPerfil['Inscribirme a materias de primaria'] ?? "",
         "secundaria"=>$datosPerfil['Inscribirme a materias de secundaria'] ?? "",
         "materias"=>$datosPerfil['Perfiles de curso'] ?? ""

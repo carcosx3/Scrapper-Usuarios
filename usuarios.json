@@ -1,5 +1,5 @@
 {
-    "generado": "2026-05-26 18:26:30",
+    "generado": "2026-05-26 20:47:00",
     "total": 5,
     "usuarios": [
         {
@@ -11,14 +11,10 @@
             "estado": "Baja California Sur",
             "municipio": "Baja California Sur",
             "localidad": "La Paz Bcs",
-            "razon": "",
+            "razon": "Para obtener mi certificado de Primaria",
             "primaria": "",
             "secundaria": "",
-            "materias": [
-                "Primaria - Lengua y comunicación 1",
-                "Primaria - Pensamiento matemático 1",
-                "Primaria - Vida y comunidad 1"
-            ]
+            "materias": "Primaria - Lengua y comunicación 1Primaria - Pensamiento matemático 1Primaria - Vida y comunidad 1"
         },
         {
             "nombre": "Jaime",
@@ -29,14 +25,10 @@
             "estado": "Baja California Sur",
             "municipio": "Los cabos",
             "localidad": "Luis Donald colosio",
-            "razon": "",
+            "razon": "Para obtener mi certificado de Secundaria",
             "primaria": "No",
             "secundaria": "Sí",
-            "materias": [
-                "Secundaria - Lengua y comunicación 3",
-                "Secundaria - Pensamiento matemático 3",
-                "Secundaria - Vida y comunidad 2"
-            ]
+            "materias": "Secundaria - Lengua y comunicación 3Secundaria - Pensamiento matemático 3Secundaria - Vida y comunidad 2"
         },
         {
             "nombre": "Jesus",
@@ -47,14 +39,10 @@
             "estado": "Baja California Sur",
             "municipio": "Los Cabos",
             "localidad": "cabo san lucas",
-            "razon": "",
+            "razon": "Para obtener mi certificado de Secundaria",
             "primaria": "",
             "secundaria": "",
-            "materias": [
-                "Secundaria - Lengua y comunicación 3",
-                "Secundaria - Pensamiento matemático 3",
-                "Secundaria - Vida y comunidad 2"
-            ]
+            "materias": "Secundaria - Lengua y comunicación 3Secundaria - Pensamiento matemático 3Secundaria - Vida y comunidad 2"
         },
         {
             "nombre": "Juan",
@@ -65,14 +53,10 @@
             "estado": "Baja California Sur",
             "municipio": "Los Cabos",
             "localidad": "San Jose del Cabo",
-            "razon": "",
+            "razon": "Para obtener mi certificado de Secundaria",
             "primaria": "",
             "secundaria": "",
-            "materias": [
-                "Secundaria - Lengua y comunicación 3",
-                "Secundaria - Pensamiento matemático 3",
-                "Secundaria - Vida y comunidad 2"
-            ]
+            "materias": "Secundaria - Lengua y comunicación 3Secundaria - Pensamiento matemático 3Secundaria - Vida y comunidad 2"
         },
         {
             "nombre": "Miriam",
@@ -83,14 +67,10 @@
             "estado": "Baja California Sur",
             "municipio": "LOS CABOS",
             "localidad": "Cabo San Lucas",
-            "razon": "",
+            "razon": "Para obtener mi certificado de Secundaria",
             "primaria": "",
             "secundaria": "",
-            "materias": [
-                "Secundaria - Lengua y comunicación 3",
-                "Secundaria - Pensamiento matemático 3",
-                "Secundaria - Vida y comunidad 2"
-            ]
+            "materias": "Secundaria - Lengua y comunicación 3Secundaria - Pensamiento matemático 3Secundaria - Vida y comunidad 2"
         }
     ]
 }
