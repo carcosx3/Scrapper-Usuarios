@@ -243,14 +243,8 @@ foreach($profiles as $id=>$html){
         if($dt && $dd){
 
             $titulo = trim($dt->textContent);
-
-            // excepción de la pregunta larga
-            if(str_contains($titulo, '¿Por qué te interesa registrarte en esta plataforma?')){
-                $dt = $dts->item(1);
-            }
-
             // si el dd tiene una ul interna -> materias
-            if($dd->getElementsByTagName('ul')->length > 0){
+            if( str_contains($titulo, 'Perfiles de curso') ){
 
                 $materias = [];
 
@@ -261,7 +255,6 @@ foreach($profiles as $id=>$html){
                 }
 
                 $datosPerfil[$titulo] = $materias;
-
             }
             // datos normales
             $datosPerfil[$titulo] = trim($dd->textContent);
