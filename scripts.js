@@ -58,6 +58,7 @@ function usuarios( usersArray ){
                         <li><span class="font-bold">Edad: </span>${edad}</li>
                         <li class="uppercase">${user.curp}</li>
                         <li class="lowercase">${user.email}</li>
+                        <li class="lowercase">${user.telefono}</li>
                         <li class="capitalize">${user.estado}</li>
                         <li class="capitalize">${user.municipio}</li>
                         <li class="capitalize">${user.localidad}</li>

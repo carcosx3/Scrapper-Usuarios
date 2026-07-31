@@ -124,7 +124,7 @@ $filterPost=[
 
 ];
 
-$filterPage=curlRequest($base."/admin/user.php",$filterPost);
+$filterPage=curlRequest($base."/admin/user.php?perpage=1000",$filterPost);
 
 /* ---------- PARSEAR USUARIOS ---------- */
 
@@ -247,7 +247,6 @@ foreach($profiles as $id=>$html){
             if( str_contains($titulo, 'Perfiles de curso') ){
 
                 $materias = [];
-
                 $items = $dd->getElementsByTagName('li');
 
                 foreach($items as $item){
@@ -268,6 +267,7 @@ foreach($profiles as $id=>$html){
         "email"=>$datosPerfil['Dirección Email'] ?? "",
         "nacimiento"=>$datosPerfil['Fecha de  nacimiento'] ?? "",
         "curp"=>$datosPerfil['CURP (18 caracteres)'] ?? "",
+        "telefono"=>$datosPerfil['Teléfono de contacto'] ?? "",
         "estado"=>$datosPerfil['Entidad federativa donde radicas actualmente'] ?? "",
         "municipio"=>$datosPerfil['Municipio donde radicas actualmente'] ?? "",
         "localidad"=>$datosPerfil['Localidad o Colonia donde radicas actualmente'] ?? "",
